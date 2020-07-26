@@ -37,17 +37,10 @@ Widget _intro(){
   return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 4,
-        gradientBackground: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Color.fromRGBO(77, 198, 254, 0),
-            Color.fromRGBO(245, 245, 245, 0)
-          ],
-        ),
-          navigateAfterSeconds: HomeScreen(),
-        loadingText: Text('Inicializando =]'),
+        seconds: 2,
+        backgroundColor: Colors.blue,
+        navigateAfterSeconds: HomeScreen(),
+        loaderColor: Colors.white,
       ),
       Container(
         decoration: BoxDecoration(

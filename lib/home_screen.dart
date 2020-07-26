@@ -10,14 +10,19 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.lightBlue,
-      ),
-
-      body: Center(
-
-        child: Text("Aplicativo de cálculo", style: TextStyle(fontSize: 20.0, color: Colors.black),),
-
+      backgroundColor: Colors.blue,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(Icons.school, size: 100, color: Colors.white, ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 100.0),
+            )
+          ],
+        ),
       ),
     );
   }
